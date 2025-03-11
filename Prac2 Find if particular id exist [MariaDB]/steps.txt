@@ -1,0 +1,30 @@
+steps:
+make a db in server(maria db):: create database db
+make a table:: create table usersCopy ( uid INT, role varchar(50), password varchar(50));
+insert data::  insert into usersCopy(uid , role, password) values (101, "Manager", "rdad"), (102 , "Asst.Mgr", "ash2") , (103 , "HR", "krso2");
+
+download the connector 
+link: https://dbschema.com/jdbc-driver/mariadb.html?srsltid=AfmBOopZmCURhBH7WdWfcjuRTYW5bvJH815JNWH9MzgrnSwC8_5Jw0v3
+
+unzip the file and add the folder inside lib folder in eclipse
+
+
+right click on ur project -> Build Path -> configure build path -> click on libraries -> click on classpath -> click on add external jar ->select ur jar file -> applyt and close
+
+change the database , username , password , and column names accordingly
+
+paste code
+
+
+// sql commands
+mysql -u root -p
+
+create database DB
+
+use DB
+
+CREATE TABLE usersCopy ( uid INT, role VARCHAR(50), password VARCHAR(50));
+
+ INSERT INTO userCopy(uid , role, password) VALUES (101, "Manager", "rdad"), (102 , "Asst.Mgr", "ash2") , (103 , "HR", "krso2");
+
+select * from usersCopy
